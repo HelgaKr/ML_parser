@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <title>
+        ML parser
+    </title>
+<head>
+    <style>
+        body {
+        background-color: rgba(245, 236, 212, 0.8);
+        font-size: 20px;
+    }
+    .center-children {
+        text-align: center;
+    }
+    .center-me {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    .input-container {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 12px;
+
+    }
+    .container {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .item-container {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    #results {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+        {font-family: sans-serif
+    }
+
+    #button {
+        border-radius: 4px;
+        background: rgba(250, 206, 105, 0.5);
+        border: 0.5px solid #000000;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    #copy_button {
+        justify-content: right;
+        border-radius: 4px;
+        background: rgba(250, 206, 105, 0.5);
+        border: 0.5px solid #000000;
+    }
+    #app {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .word__container {
+        display: flex;
+        align-items: flex-start;
+        margin-right: 24px;
+        margin-bottom:24px;
+        padding: 5px;
+        background: rgba(255, 214, 133, 0.5);
+        border-radius: 5px;
+    }
+
+    .word__translation > p {
+        margin: 0;
+
+    }
+
+    .word {
+        margin: 0;
+    }
+
+    .word__translation {
+        display:flex;
+        flex-flow: column wrap;
+        align-content: flex-start;
+        white-space: nowrap;
+    }
+
+    .translation {
+         overflow-wrap: normal;
+    }
+    .word__gloss-container {
+        margin-left: 12px;
+        white-space: nowrap;
+    }
+
+    .word__gloss-container > p {
+        margin: 0;
+    }
+
+
+    #abbreviations_list {
+
+        align-items:flex-start;
+        margin-top: 72px;
+
+    }
+    </style>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<div class='center-me'>
+    <h2 class="center-children">Welcome to the Media Lengua parser.</h2>
+<hr />
+
+<div class="input-container">
+<textarea id="user-input" placeholder="Your word or sentence." wrap='hard' minlength="1" cols="50" rows="1"></textarea>
+
+<button onclick="main()" id="button">
+    Parse
+</button>
+<button onclick="copy('app')" id="copy_button">Copy result</button>
+
+</div>
+
+<div id="app">
+
+</div>
+
+<div id="abbreviations_list">
+
+</div>
+
+
+</div>
+<script src="Script.js" type="text/javascript">
+
+</script>
+
+</body>
+</html>
