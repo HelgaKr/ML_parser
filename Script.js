@@ -32,6 +32,31 @@ var all_morphemes_full = [];
 // Here we create a value that will identify if we have multiple parsing options for one word. We will use it to create a different style of the boxes for the parsing options of the similar word.
 var multiple_results_for_one_word = {};
 
+// Here we create rows for our copy button and the function that will create table out of rows;
+let row1 = [];
+let row2 = [];
+let table_to_copy = [];
+function createTable(tableData) {
+  const table = document.createElement('table');
+  table.setAttribute("id", "table-copy");
+  const tableBody = document.createElement('tbody');
+  table.innerHTML = '';
+
+  tableData.forEach(function(rowData) {
+    const row = document.createElement('tr');
+
+    rowData.forEach(function(cellData) {
+      const cell = document.createElement('td');
+      cell.appendChild(document.createTextNode(cellData));
+      row.appendChild(cell);
+    });
+
+    tableBody.appendChild(row);
+  });
+
+  table.appendChild(tableBody);
+  document.body.appendChild(table);
+}
 
 //2. TECHNICAL FUNCTIONS
 //Here is a function that makes "enter" key work as click.
@@ -45,20 +70,13 @@ document.addEventListener("keyup", function(event) {
 
 //Here is a function that copies the parsing result to
 
-function copy(container_id) {
-  if (document.selection) {
-    var range = document.body.createTextRange();
-    range.moveToElementText(document.getElementById(container_id));
-    range.select().createTextRange();
-    document.execCommand("copy");
-  } else if (window.getSelection) {
-    var range = document.createRange();
-    range.selectNode(document.getElementById(container_id));
+function copytable(table) {
+    const table_contents = document.getElementById(table);
+    const range = document.createRange();
+    range.selectNode(table_contents);
     window.getSelection().addRange(range);
-    document.execCommand("copy");
-  }
+    document.execCommand('copy');
 }
-
 
 //Here are functions that highlight and clear highlight of the glosses in abbreviations list.
 
@@ -632,11 +650,14 @@ function main (){
         wordElement.className = "word";
         const wordText = document.createTextNode(item.word);
         wordElement.appendChild(wordText);
+        row1.push(item.word);
 
         const translationElement = document.createElement("p");
         translationElement.className = "translation";
         const translationText = document.createTextNode(item.translation);
         translationElement.appendChild(translationText);
+        row2.push(item.translation);
+
 
         const word_translationContainerElement = document.createElement("div");
         word_translationContainerElement.className = "word__translation";
@@ -655,12 +676,16 @@ function main (){
             morphemeElement.className = "word__morpheme";
             const morphemeText = document.createTextNode(" - " + morpheme.morph);
             morphemeElement.appendChild(morphemeText);
+            row1.push("-");
+            row1.push(morpheme.morph);
 
 
             const glossElement = document .createElement("p");
             glossElement.className = "word__gloss";
             const glossText = document.createTextNode(" - " + morpheme.gloss);
             glossElement.appendChild(glossText);
+            row2.push("-");
+            row2.push(morpheme.gloss);
 
 
             const glossContainerElement = document.createElement("div");
@@ -677,11 +702,13 @@ function main (){
 
             });
 
-
+            row1.push("    ");
+            row2.push("   ");
             glossContainerElement.appendChild(morphemeElement);
             glossContainerElement.appendChild(glossElement);
 
             wordContainerElement.appendChild(glossContainerElement);
+
 
 
             //Preparation step for the abbreviations list
@@ -702,9 +729,15 @@ function main (){
         });
 
 
-
         parsing_results.appendChild(wordContainerElement);
         });
+
+
+        //Here we put all the results to the html table that we will copy to clipboard.
+        table_to_copy.push(row1);
+        table_to_copy.push(row2);
+        createTable(table_to_copy);
+
             //Here it collects info about verbal and other morphemes for the abbreviation list.
             //It removes repeated values, so in abbreviation list the gloss meaning for the repeated value will appear only once.
 

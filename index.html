@@ -120,6 +120,13 @@
         margin-top: 72px;
 
     }
+
+    #table-copy {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+
+    }
     </style>
     <meta charset="UTF-8">
 </head>
@@ -135,7 +142,7 @@
 <button onclick="main()" id="button">
     Parse
 </button>
-<button onclick="copy('app')" id="copy_button">Copy result</button>
+<button onclick="copytable('table-copy')" id="copy_button">Copy result</button>
 
 </div>
 
