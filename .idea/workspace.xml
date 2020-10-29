@@ -26,11 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-              <folding>
-                <element signature="e#1861#2089#2#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="224">
+              <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -38,17 +35,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="743" column="1" selection-start-line="743" selection-start-column="1" selection-end-line="743" selection-end-column="1" />
+            <state relative-caret-position="229">
+              <caret line="572" column="7" selection-start-line="572" selection-start-column="7" selection-end-line="572" selection-end-column="7" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#986826#986935#0" />
-                <element signature="e#987599#987762#0" />
-                <element signature="e#987790#987930#0" />
-                <element signature="e#988242#990225#0" />
-                <element signature="e#990513#993549#0" />
-                <element signature="e#993761#1002450#0" />
-                <element signature="e#1002489#1010529#0" />
+                <element signature="e#987658#987767#0" />
+                <element signature="e#988233#988396#0" />
+                <element signature="e#988424#988564#0" />
+                <element signature="e#988876#991090#0" />
+                <element signature="e#991378#994492#0" />
+                <element signature="e#994704#1003986#0" />
+                <element signature="e#1004025#1012220#0" />
               </folding>
             </state>
           </provider>
@@ -68,9 +65,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;bena</find>
-      <find>&quot;bina</find>
-      <find>&quot;wa&quot;</find>
       <find>&quot;wan&quot;</find>
       <find>&quot;n&quot;</find>
       <find>'shayana'</find>
@@ -98,6 +92,9 @@
       <find>trabajo'</find>
       <find>trabajoso</find>
       <find>word__c</find>
+      <find>unique</find>
+      <find>all_morphemes_full</find>
+      <find>copytable</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -302,12 +299,14 @@
       <workItem from="1602688870459" duration="19615000" />
       <workItem from="1603164579851" duration="443000" />
       <workItem from="1603732114223" duration="15288000" />
-      <workItem from="1603811727498" duration="13853000" />
+      <workItem from="1603811727498" duration="22705000" />
+      <workItem from="1603926046038" duration="2837000" />
+      <workItem from="1603932661755" duration="3249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455110000" />
+    <option name="totallyTimeSpent" value="470048000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -336,7 +335,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25837988" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25698325" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -412,27 +411,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="126" column="22" selection-start-line="126" selection-start-column="22" selection-end-line="126" selection-end-column="22" />
-          <folding>
-            <element signature="e#1861#2089#2#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="224">
+          <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="743" column="1" selection-start-line="743" selection-start-column="1" selection-end-line="743" selection-end-column="1" />
+        <state relative-caret-position="229">
+          <caret line="572" column="7" selection-start-line="572" selection-start-column="7" selection-end-line="572" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#986826#986935#0" />
-            <element signature="e#987599#987762#0" />
-            <element signature="e#987790#987930#0" />
-            <element signature="e#988242#990225#0" />
-            <element signature="e#990513#993549#0" />
-            <element signature="e#993761#1002450#0" />
-            <element signature="e#1002489#1010529#0" />
+            <element signature="e#987658#987767#0" />
+            <element signature="e#988233#988396#0" />
+            <element signature="e#988424#988564#0" />
+            <element signature="e#988876#991090#0" />
+            <element signature="e#991378#994492#0" />
+            <element signature="e#994704#1003986#0" />
+            <element signature="e#1004025#1012220#0" />
           </folding>
         </state>
       </provider>

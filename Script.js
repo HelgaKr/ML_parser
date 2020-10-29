@@ -29,13 +29,17 @@ var final_output = [];
 var all_morphemes_verbal = [];
 var all_morphemes_other = [];
 var all_morphemes_full = [];
+
+var unique_morphemes_verbal = [];
+var unique_morphemes_other = [];
+var unique_morphemes_all = [];
 // Here we create a value that will identify if we have multiple parsing options for one word. We will use it to create a different style of the boxes for the parsing options of the similar word.
 var multiple_results_for_one_word = {};
 
 // Here we create rows for our copy button and the function that will create table out of rows;
-let row1 = [];
-let row2 = [];
-let table_to_copy = [];
+var row1 = [];
+var row2 = [];
+var table_to_copy = [];
 function createTable(tableData) {
   const table = document.createElement('table');
   table.setAttribute("id", "table-copy");
@@ -70,8 +74,8 @@ document.addEventListener("keyup", function(event) {
 
 //Here is a function that copies the parsing result to
 
-function copytable(table) {
-    const table_contents = document.getElementById(table);
+function copytable() {
+    const table_contents = document.getElementById('table-copy');
     const range = document.createRange();
     range.selectNode(table_contents);
     window.getSelection().addRange(range);
@@ -164,7 +168,6 @@ function nom_parsing(word) {
 
         if (word.endsWith(morpheme) && word.length - morpheme.length !== 0) {
             const possible_stem = word.slice(0, ~(morpheme.length - 1));
-            console.log(possible_stem);
             morphemes_nominal.unshift(morpheme);
             if (dictionary_IPA.includes(possible_stem) && dictionary[possible_stem]["part_of_speech"] !== "verb") {
                 const nom_morphemes_to_return = morphemes_nominal.slice();
@@ -184,7 +187,7 @@ function nom_parsing(word) {
                 return word_parsing_result
                 }
 
-            } else if (variations_IPA.includes(possible_stem) && dictionary[possible_stem]["part_of_speech"] !== "verb") {
+            } else if (variations_IPA.includes(possible_stem) && dictionary[variations[possible_stem]]["part_of_speech"] !== "verb") {
                 const nom_morphemes_to_return = morphemes_nominal.slice();
                 const word_parsing_result = {word: "", translation: "", morphemes: [], part_of_speech: ""};
                 morphemes_nominal = [];
@@ -251,7 +254,6 @@ function verbal_parsing(word) {
                         });
 
                     } else if (m ==="pai") {
-
                         for (let i = 0; i < inflectional_morphemes.length; i++) {
                             const infl_morpheme = inflectional_morphemes[i];
                             if (verbal_morphemes_to_return.includes(infl_morpheme)) {
@@ -280,6 +282,16 @@ function verbal_parsing(word) {
                             verb = "False";
                         }
                     };
+
+                } else if (verbal_morphemes_to_return.includes("mu")) {
+                    for (let i = 0; i < inflectional_morphemes.length; i++) {
+                        const infl_morpheme = inflectional_morphemes[i];
+                        if (verbal_morphemes_to_return.includes(infl_morpheme)) {
+                            return word_parsing_result;
+                        } else {
+                            console.log(" ")
+                        }
+                    }
                 } else if (verbal_morphemes_to_return.includes("ta") && !(verbal_morphemes_to_return.includes("na") || verbal_morphemes_to_return.includes("ʃka"))) {
                     console.log(" ")
                 } else if (verbal_morphemes_to_return.includes ("xu") && verbal_morphemes_to_return.includes("ku")) {
@@ -542,24 +554,37 @@ function predictive_parsing(word) {
 
 
 function main (){
-    // global
+    // cleaning all the data from the previous run
     all_morphemes_verbal = [];
     all_morphemes_other = [];
+    all_morphemes_full = [];
     verb_inf = "";
     final_output = [];
     morphemes_nominal = [];
     morphemes_verbal = [];
     morphemes = [];
     multiple_results_for_one_word = {};
-    //Here t
+    unique_morphemes_other =[];
+    unique_morphemes_verbal = [];
+    unique_morphemes_all = [];
+    table_to_copy = [];
+    row1 = [];
+    row2 = [];
+    //Here we create titles for the html elements.
     const inputElement = document.getElementById("user-input");
     const parsing_results = document.getElementById("app");
     const abbreviations_list = document.getElementById("abbreviations_list");
+    const tableElement = document.getElementById("table-copy");
     const input = inputElement.value;
     inputElement.value = '';
-    // Here it cleans results and abbreviations when we start new search.
+    // Here we clean results from the previous run
     parsing_results.innerHTML = '';
     abbreviations_list.innerHTML = '';
+
+    if (tableElement !== null) {
+        tableElement.outerHTML = '';
+    }
+
     //Here is normalizes user input (lower case, remove punctuation signs) and split input in to the separate elements (in case of sentence parsing).
     input_lower_case = input.toLowerCase();
     const input_items = input_lower_case.replace(/[.,\/#!$¡¿%^&*;:{}=-`~()"']/g," ").replace(/\s\s+/g," ").trim();
@@ -624,10 +649,8 @@ function main (){
             morphemes = [];
         } else if (results.length >= 2) {
             multiple_results_for_one_word[word] = true;
-            console.log(multiple_results_for_one_word);
         } else {
             multiple_results_for_one_word[word] = false;
-            console.log(multiple_results_for_one_word);
 
         }
 
@@ -703,7 +726,7 @@ function main (){
             });
 
             row1.push("    ");
-            row2.push("   ");
+            row2.push("    ");
             glossContainerElement.appendChild(morphemeElement);
             glossContainerElement.appendChild(glossElement);
 
@@ -736,19 +759,21 @@ function main (){
         //Here we put all the results to the html table that we will copy to clipboard.
         table_to_copy.push(row1);
         table_to_copy.push(row2);
+        console.log(table_to_copy);
         createTable(table_to_copy);
 
             //Here it collects info about verbal and other morphemes for the abbreviation list.
             //It removes repeated values, so in abbreviation list the gloss meaning for the repeated value will appear only once.
 
 
-
             unique_morphemes_verbal = Array.from(new Set(all_morphemes_verbal));
             unique_morphemes_other = Array.from(new Set(all_morphemes_other));
             unique_morphemes_all = Array.from(new Set(all_morphemes_full));
+                        console.log({ unique_morphemes_verbal, unique_morphemes_other, unique_morphemes_all })
+
 
             //Create an 'ul' objects for each gloss+gloss_meaning pair to add to the 'li' object
-            const abbreviations_listContainer = document.createElement("ul");
+
 
             unique_morphemes_verbal.forEach(morpheme_verbal => {
              const abbreviation_vElement = document.createElement("li");
@@ -759,8 +784,9 @@ function main (){
 
                 abbreviation_vElement.appendChild(abbreviation_vText);
 
-                abbreviations_listContainer.appendChild(abbreviation_vElement);
-                abbreviations_list.appendChild(abbreviations_listContainer);
+                abbreviations_list.appendChild(abbreviation_vElement);
+
+
             });
 
             unique_morphemes_other.forEach(morpheme_other => {
@@ -771,10 +797,12 @@ function main (){
                 const abbreviation_oText = document.createTextNode(`${other_types_morphemes_dict[morpheme_other]["Gloss"]} - ${other_types_morphemes_dict[morpheme_other]["Meaning Gloss"]}`);
                 abbreviation_oElement.appendChild(abbreviation_oText);
 
-                abbreviations_listContainer.appendChild(abbreviation_oElement);
-                abbreviations_list.appendChild(abbreviations_listContainer);
+                abbreviations_list.appendChild(abbreviation_oElement);
+
+
 
             });
+
             unique_morphemes_all.forEach(morpheme_from_all => {
                 const abbreviation_aElement = document.createElement("li");
                 abbreviation_aElement.className = "gloss__abbreviation";
@@ -783,8 +811,7 @@ function main (){
                 const abbreviation_oText = document.createTextNode(`${all_morphemes_dict[morpheme_from_all]["Gloss"]} - ${all_morphemes_dict[morpheme_from_all]["Meaning Gloss"]}`);
                 abbreviation_aElement.appendChild(abbreviation_oText);
 
-                abbreviations_listContainer.appendChild(abbreviation_aElement);
-                abbreviations_list.appendChild(abbreviations_listContainer);
+                abbreviations_list.appendChild(abbreviation_aElement);
 
             });
             if (verb_inf === "True") {
@@ -795,8 +822,8 @@ function main (){
                 const abbreviation_oText = document.createTextNode("INF - infinitivo");
                 abbreviation_oElement.appendChild(abbreviation_oText);
 
-                abbreviations_listContainer.appendChild(abbreviation_oElement);
-                abbreviations_list.appendChild(abbreviations_listContainer);
+                abbreviations_list.appendChild(abbreviation_oElement);
+
             }
 };
 

@@ -121,12 +121,12 @@
 
     }
 
-    #table-copy {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-
-    }
+    {##table-copy {#}
+    {#    position: absolute;#}
+    {#    top: -9999px;#}
+    {#    left: -9999px;#}
+    {##}
+    {#}#}
     </style>
     <meta charset="UTF-8">
 </head>
@@ -142,7 +142,7 @@
 <button onclick="main()" id="button">
     Parse
 </button>
-<button onclick="copytable('table-copy')" id="copy_button">Copy result</button>
+<button onclick="copytable()" id="copy_button">Copy result</button>
 
 </div>
 
@@ -150,9 +150,9 @@
 
 </div>
 
-<div id="abbreviations_list">
+<ul id="abbreviations_list">
 
-</div>
+</ul>
 
 
 </div>
