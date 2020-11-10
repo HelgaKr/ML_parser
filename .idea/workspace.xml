@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75ac5f3f-6ced-4cc5-a930-2638c462493e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,23 +22,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1108">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+            <state relative-caret-position="1118">
+              <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20241">
-              <caret line="580" column="35" selection-start-line="580" selection-start-column="35" selection-end-line="580" selection-end-column="35" />
+            <state relative-caret-position="401">
+              <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#987658#987767#0" />
               </folding>
             </state>
           </provider>
@@ -60,9 +57,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;wan&quot;</find>
-      <find>&quot;n&quot;</find>
-      <find>'shayana'</find>
       <find>&quot;i&quot;</find>
       <find>ɾka</find>
       <find>ŋka</find>
@@ -90,6 +84,9 @@
       <find>unique</find>
       <find>all_morphemes_full</find>
       <find>copytable</find>
+      <find>kana</find>
+      <find>'kana'</find>
+      <find>'pa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,8 +109,8 @@
         <option value="$PROJECT_DIR$/styles.css" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_28.py" />
-        <option value="$PROJECT_DIR$/Script.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Script.js" />
       </list>
     </option>
   </component>
@@ -297,12 +294,17 @@
       <workItem from="1603811727498" duration="22705000" />
       <workItem from="1603926046038" duration="2837000" />
       <workItem from="1603932661755" duration="3603000" />
-      <workItem from="1603987420325" duration="2653000" />
+      <workItem from="1603987420325" duration="3422000" />
+      <workItem from="1604009225659" duration="809000" />
+      <workItem from="1604013848863" duration="1343000" />
+      <workItem from="1604693194238" duration="645000" />
+      <workItem from="1604947563460" duration="6006000" />
+      <workItem from="1604972270478" duration="7872000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="473055000" />
+    <option name="totallyTimeSpent" value="490499000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -407,18 +409,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1108">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        <state relative-caret-position="1118">
+          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20241">
-          <caret line="580" column="35" selection-start-line="580" selection-start-column="35" selection-end-line="580" selection-end-column="35" />
+        <state relative-caret-position="401">
+          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#987658#987767#0" />
           </folding>
         </state>
       </provider>
