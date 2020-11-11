@@ -34,10 +34,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
+            <state relative-caret-position="182">
+              <caret line="14" selection-start-line="14" selection-end-line="15" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#992170#999142#0" />
               </folding>
             </state>
           </provider>
@@ -57,11 +58,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;i&quot;</find>
-      <find>ɾka</find>
-      <find>ŋka</find>
-      <find>xu</find>
-      <find>qué?</find>
       <find>kaman</find>
       <find>&quot;pa&quot;</find>
       <find>abentado</find>
@@ -87,6 +83,11 @@
       <find>kana</find>
       <find>'kana'</find>
       <find>'pa</find>
+      <find>&quot;j&quot;</find>
+      <find>adiβinana</find>
+      <find>'llover'</find>
+      <find>pelado</find>
+      <find>&quot;ngapa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="1105" />
     <option name="height" value="1020" />
@@ -299,12 +300,13 @@
       <workItem from="1604013848863" duration="1343000" />
       <workItem from="1604693194238" duration="645000" />
       <workItem from="1604947563460" duration="6006000" />
-      <workItem from="1604972270478" duration="7872000" />
+      <workItem from="1604972270478" duration="8056000" />
+      <workItem from="1605046561916" duration="8911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="490499000" />
+    <option name="totallyTimeSpent" value="499594000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -316,7 +318,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16778524" />
@@ -416,10 +418,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
+        <state relative-caret-position="182">
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#992170#999142#0" />
           </folding>
         </state>
       </provider>
