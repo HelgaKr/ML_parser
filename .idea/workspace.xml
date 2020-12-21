@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1118">
-              <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+            <state relative-caret-position="1329">
+              <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -34,13 +34,27 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="247">
+              <caret line="725" column="38" selection-start-line="725" selection-start-column="38" selection-end-line="725" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#995997#1002968#0" />
-                <element signature="e#1015854#1024015#0" />
+                <element signature="e#992935#995722#0" />
+                <element signature="e#996010#1002981#0" />
+                <element signature="e#1003193#1015916#0" />
+                <element signature="e#1015955#1024116#0" />
+                <element signature="e#1024163#1025822#0" />
+                <element signature="e#1036331#1042976#0" />
+                <element signature="e#1035188#1052209#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Parser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -59,36 +73,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'parlana'</find>
-      <find>&quot;ʃpa&quot;</find>
-      <find>&quot;traba</find>
-      <find>&quot;tr</find>
-      <find>&quot;t</find>
-      <find>?</find>
-      <find>&quot;na&quot;</find>
-      <find>&quot;neg</find>
-      <find>&quot;w</find>
-      <find>PROG</find>
-      <find>pai</find>
-      <find>trabajo'</find>
-      <find>trabajoso</find>
-      <find>word__c</find>
-      <find>unique</find>
-      <find>all_morphemes_full</find>
-      <find>copytable</find>
-      <find>kana</find>
-      <find>'kana'</find>
-      <find>'pa</find>
-      <find>&quot;j&quot;</find>
-      <find>adiβinana</find>
-      <find>'llover'</find>
-      <find>pelado</find>
-      <find>&quot;ngapa</find>
-      <find>&quot;wa&quot;</find>
       <find>&quot;DUB&quot;</find>
       <find>&quot;DUB.3&quot;</find>
       <find>&quot;SUP&quot;</find>
       <find>&quot;DUB.2&quot;</find>
+      <find>pi</find>
+      <find>&quot;pi</find>
+      <find>POSS</find>
+      <find>alrededorde</find>
+      <find>al rededor de</find>
+      <find>CJRT</find>
+      <find>pending</find>
+      <find>CONJ</find>
+      <find>CONJ-</find>
+      <find>AFF</find>
+      <find>DUB.2</find>
+      <find>ʧun</find>
+      <find>SUBJ.SS</find>
+      <find>CNT</find>
+      <find>angara</find>
+      <find>de parte a partellata</find>
+      <find>'hoy dia'</find>
+      <find>'sombrero de</find>
+      <find>somb</find>
+      <find>'randi</find>
+      <find>ajustado</find>
+      <find>bendina</find>
+      <find>bena</find>
+      <find>&quot;bena&quot;</find>
+      <find>'bena'</find>
+      <find>&quot;wa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,6 +126,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_28.py" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js" />
+        <option value="$USER_HOME$/Downloads/Parser.js" />
         <option value="$PROJECT_DIR$/Script.js" />
       </list>
     </option>
@@ -131,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;JavaScript&#10;Cython" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript&#10;Python&#10;Cython" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -139,13 +155,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser\ML_app" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Helga\PycharmProjects\ML_parser" />
       <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser" />
       <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser\ML_app\templates\ML_app\rest_framework" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser\ML_app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,12 +319,20 @@
       <workItem from="1604947563460" duration="6006000" />
       <workItem from="1604972270478" duration="8056000" />
       <workItem from="1605046561916" duration="9837000" />
-      <workItem from="1605734252699" duration="4187000" />
+      <workItem from="1605734252699" duration="4330000" />
+      <workItem from="1606234678886" duration="9156000" />
+      <workItem from="1607357154430" duration="7011000" />
+      <workItem from="1607456671811" duration="3672000" />
+      <workItem from="1607545185341" duration="7015000" />
+      <workItem from="1607615750131" duration="7602000" />
+      <workItem from="1607714012807" duration="4202000" />
+      <workItem from="1607974839878" duration="1287000" />
+      <workItem from="1608054973462" duration="48185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="504707000" />
+    <option name="totallyTimeSpent" value="592980000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -337,7 +361,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25698325" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25698325" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -347,31 +371,6 @@
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16778524" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25698325" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -436,21 +435,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Parser.js.URL" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Parser.html.URL" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
-          <caret line="86" column="28" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+        <state relative-caret-position="1329">
+          <caret line="141" column="9" lean-forward="true" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="106" column="1" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="247">
+          <caret line="725" column="38" selection-start-line="725" selection-start-column="38" selection-end-line="725" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#995997#1002968#0" />
-            <element signature="e#1015854#1024015#0" />
+            <element signature="e#992935#995722#0" />
+            <element signature="e#996010#1002981#0" />
+            <element signature="e#1003193#1015916#0" />
+            <element signature="e#1015955#1024116#0" />
+            <element signature="e#1024163#1025822#0" />
+            <element signature="e#1036331#1042976#0" />
+            <element signature="e#1035188#1052209#0" />
           </folding>
         </state>
       </provider>
