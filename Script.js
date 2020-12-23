@@ -675,53 +675,52 @@ function predictive_parsing(word) {
 }
 
 function morpheme_string_parsing (string, morphemes_list) {
-    console.log(string);
-    for (let i = 0; i < morphemes_list.length; i++) {
-        const morph = morphemes_list[i];
-        const possible_morph = [];
-        if (string === morph) {
-            console.log (1, morph)
-            morphemes_final.push(string);
-            return true
-        } else if (string.startsWith(morph)) {
-            possible_morph.push(morph);
-            console.log(2, morph)
-            if (possible_morph.length === 1) {
-                morphemes_final.push(possible_morph[0]);
-                const left_string = string.substring(possible_morph[0].length);
-                console.log(3, string, left_string);
-                if (left_string.length !== 0) {
-                    return morpheme_string_parsing(left_string, morphemes_list);
-                } else if (left_string.length === 0) {
-                     return false
+        for (let i = 0; i < morphemes_list.length; i++) {
+            const morph = morphemes_list[i];
+            const possible_morph = [];
+            console.log(0, morph === string);
+            if (string === morph) {
+                console.log(1, morph);
+                morphemes_final.push(string);
+                return true
+            } else if (string.startsWith(morph)) {
+                possible_morph.push(morph);
+                console.log(2, morph)
+                if (possible_morph.length === 1) {
+                    morphemes_final.push(possible_morph[0]);
+                    const left_string = string.substring(possible_morph[0].length);
+                    console.log(3, string, left_string);
+                    if (left_string.length !== 0) {
+                        return morpheme_string_parsing(left_string, morphemes_list);
+                    } else if (left_string.length === 0) {
+                        return false
+                    }
+                } else if (possible_morph.length > 1) {
+                    const length = [];
+                    possible_morph.forEach(morph => {
+                        length.push(morph.length);
+                    });
+                    const morph_length = Math.max(length);
+                    const morph_index = length.indexOf(morph_length);
+                    morphemes_final.push(possible_morph[morph_index]);
+                    if (left_string.length !== 0) {
+                        return morpheme_string_parsing(left_string, morphemes_list)
+                    } else {
+                        return true
+                    }
                 }
-            } else if (possible_morph.length > 1) {
-                const length = [];
-                possible_morph.forEach(morph => {
-                    length.push(morph.length);
-                });
-                const morph_length = Math.max(length);
-                const morph_index = length.indexOf(morph_length);
-                morphemes_final.push(possible_morph[morph_index]);
-                if (left_string.length !== 0) {
-                    return morpheme_string_parsing(left_string, morphemes_list)
-                } else {
-                    return true
-                }
-            }
-        } else {
-                morphemes_final = [];
-                return false
             }
         }
 }
+
+
 
 function dictionary_check(word) {
     for (let i = 0; i < dictionary_IPA.length; i++) {
         const stem = dictionary_IPA[i];
         const inf_ending = "na";
-        const verb_stem = stem.replace(/na$/gi, "");
         const possible_stems = [];
+        const verb_stem = stem.replace(/na$/gi, "");
         if (word.startsWith(stem) && (dictionary[stem]["part_of_speech"] !== "verb" || dictionary[stem]["part_of_speech"].includes('noun') || dictionary[stem]["part_of_speech"].includes('adjective') || dictionary[stem]["part_of_speech"].includes('adverb') || dictionary[stem]["part_of_speech"].includes('preposition') || dictionary[stem]["part_of_speech"].includes('exclamative'))) {
             console.log(stem);
             possible_stems.push(stem);
@@ -745,7 +744,7 @@ function dictionary_check(word) {
                         morphemes_final = [];
                         return word_parsing_result
                     }
-                } else if (possible_stems.length >= 1) {
+                } else if (possible_stems.length > 1) {
                     const length = [];
                     possible_stems.forEach(stem => {
                         length.push(stem.length);
@@ -798,7 +797,7 @@ function dictionary_check(word) {
                         morphemes_final = [];
                         return word_parsing_result
                     }
-                } else if (possible_stems.length >= 1) {
+                } else if (possible_stems.length > 1) {
                     const length = [];
                     possible_stems.forEach(stem => {
                         length.push(stem.length);
@@ -835,7 +834,6 @@ function variations_check(word) {
             const stem = variations_IPA[i];
             const inf_ending = "na";
             const verb_stem = stem.replace(/na$/gi, "");
-            const possible_stems = [];
             if (word.startsWith(stem) && (dictionary[variations[stem]]["part_of_speech"] !== "verb" || dictionary[variations[stem]]["part_of_speech"].includes('noun') || dictionary[variations[stem]]["part_of_speech"].includes('adjective') || dictionary[variations[stem]]["part_of_speech"].includes('adverb'))) {
                 console.log(stem);
                 possible_stems.push(stem);
@@ -859,7 +857,7 @@ function variations_check(word) {
                         morphemes_final = [];
                         return word_parsing_result
                     }
-                } else if (possible_stems.length >= 1) {
+                } else if (possible_stems.length > 1) {
                     const length = [];
                     possible_stems.forEach(stem => {
                         length.push(stem.length);
@@ -912,7 +910,7 @@ function variations_check(word) {
                     } else {
                         console.log ("vernul false")
                     }
-                } else if (possible_stems.length >= 1) {
+                } else if (possible_stems.length > 1) {
                     const length = [];
                     possible_stems.forEach(stem => {
                         length.push(stem.length);
@@ -1021,7 +1019,7 @@ function main() {
             morphemes = [];
             morphemes_final = [];
         } else if (variations_check(word)) {
-            variations_check_result = variations_check(word)
+            variations_check_result = variations_check(word);
             results.push(variations_check_result);
             morphemes_nominal = [];
             morphemes_verbal = [];
