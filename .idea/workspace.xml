@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ac5f3f-6ced-4cc5-a930-2638c462493e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="1833">
               <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
             </state>
           </provider>
@@ -33,14 +34,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3328">
-              <caret line="803" lean-forward="true" selection-start-line="803" selection-end-line="803" />
+            <state relative-caret-position="-50">
+              <caret line="1024" column="33" lean-forward="true" selection-start-line="1024" selection-start-column="33" selection-end-line="1024" selection-end-column="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#999270#1002057#0" />
-                <element signature="e#1002345#1009316#0" />
-                <element signature="e#1009528#1022247#0" />
-                <element signature="e#1022283#1030440#0" />
+                <element signature="e#1063776#1063807#0" />
+                <element signature="e#1094831#1101239#0" />
+                <element signature="e#1101273#1107878#0" />
               </folding>
             </state>
           </provider>
@@ -60,9 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>de parte a partellata</find>
-      <find>'hoy dia'</find>
-      <find>'sombrero de</find>
       <find>somb</find>
       <find>'randi</find>
       <find>ajustado</find>
@@ -90,6 +87,9 @@
       <find>&quot;ŋka&quot;</find>
       <find>'tsena</find>
       <find>'tsena'</find>
+      <find>&quot;no</find>
+      <find>'qui'</find>
+      <find>'who</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,8 +119,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-1244" />
     <option name="width" value="1105" />
     <option name="height" value="1020" />
   </component>
@@ -317,11 +318,14 @@
       <workItem from="1608054973462" duration="48185000" />
       <workItem from="1608652257013" duration="14632000" />
       <workItem from="1608744855760" duration="9951000" />
+      <workItem from="1608759913347" duration="2363000" />
+      <workItem from="1620329661652" duration="4673000" />
+      <workItem from="1620401782130" duration="4071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="624356000" />
+    <option name="totallyTimeSpent" value="636536000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -333,7 +337,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-285" y="-1448" width="2576" height="1426" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.16778524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -349,7 +353,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.25698325" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.25698325" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.14230472" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -441,21 +445,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="1833">
           <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3328">
-          <caret line="803" lean-forward="true" selection-start-line="803" selection-end-line="803" />
+        <state relative-caret-position="-50">
+          <caret line="1024" column="33" lean-forward="true" selection-start-line="1024" selection-start-column="33" selection-end-line="1024" selection-end-column="33" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#999270#1002057#0" />
-            <element signature="e#1002345#1009316#0" />
-            <element signature="e#1009528#1022247#0" />
-            <element signature="e#1022283#1030440#0" />
+            <element signature="e#1063776#1063807#0" />
+            <element signature="e#1094831#1101239#0" />
+            <element signature="e#1101273#1107878#0" />
           </folding>
         </state>
       </provider>
