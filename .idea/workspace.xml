@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ac5f3f-6ced-4cc5-a930-2638c462493e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conjugator.html" beforeDir="false" afterPath="$PROJECT_DIR$/Conjugator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dictionary.html" beforeDir="false" afterPath="$PROJECT_DIR$/Dictionary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="199" column="72" lean-forward="true" selection-start-line="199" selection-start-column="72" selection-end-line="199" selection-end-column="72" />
+            <state relative-caret-position="931">
+              <caret line="233" column="14" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -38,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dictionary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
+            <state relative-caret-position="-416">
               <caret line="55" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
@@ -47,16 +44,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Conjugator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1222">
+            <state relative-caret-position="-533">
               <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
+            <state relative-caret-position="3380">
               <caret line="858" column="13" selection-start-line="858" selection-start-column="13" selection-end-line="858" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -70,11 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="944">
-              <caret line="199" column="33" selection-start-line="199" selection-start-column="33" selection-end-line="199" selection-end-column="33" />
+            <state relative-caret-position="866">
+              <caret line="265" column="69" lean-forward="true" selection-start-line="265" selection-start-column="69" selection-end-line="265" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/About.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -93,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bendina</find>
       <find>bena</find>
       <find>&quot;bena&quot;</find>
       <find>'bena'</find>
@@ -123,6 +128,7 @@
       <find>index</find>
       <find>No</find>
       <find>'pana'</find>
+      <find>adverb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,10 +159,12 @@
         <option value="$USER_HOME$/AppData/Local/Temp/Index_1.html" />
         <option value="$USER_HOME$/AppData/Local/Temp/Index_new.html" />
         <option value="$PROJECT_DIR$/Dictionary.html" />
-        <option value="$PROJECT_DIR$/Parser.html" />
-        <option value="$PROJECT_DIR$/Index.html" />
         <option value="$PROJECT_DIR$/Conjugator.html" />
         <option value="$PROJECT_DIR$/Script.js" />
+        <option value="$PROJECT_DIR$/Dictionary_files/About.html" />
+        <option value="$PROJECT_DIR$/Parser.html" />
+        <option value="$PROJECT_DIR$/About.html" />
+        <option value="$PROJECT_DIR$/Index.html" />
       </list>
     </option>
   </component>
@@ -180,6 +188,11 @@
               <item name="ML_parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="ML_parser" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ML_parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML_parser" type="462c0819:PsiDirectoryNode" />
+              <item name="Dictionary_files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -197,13 +210,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser\ML_app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Helga\PycharmProjects\ML_parser" />
       <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser" />
       <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser\ML_app\templates\ML_app\rest_framework" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Helga\PycharmProjects\ML_parser\ML_parser\ML_app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -382,12 +395,12 @@
       <workItem from="1620409429116" duration="3338000" />
       <workItem from="1620675135040" duration="12631000" />
       <workItem from="1620746573660" duration="21835000" />
-      <workItem from="1620921149283" duration="11557000" />
+      <workItem from="1620921149283" duration="17826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="687764000" />
+    <option name="totallyTimeSpent" value="694033000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -402,7 +415,7 @@
     <frame x="-285" y="-1448" width="2576" height="1426" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16891892" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16891892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -416,7 +429,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.25698325" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.14230472" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.14230472" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -531,37 +544,16 @@
         <state relative-caret-position="-390" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dictionary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Conjugator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
+        <state relative-caret-position="-533">
           <caret line="93" column="13" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="199" column="72" lean-forward="true" selection-start-line="199" selection-start-column="72" selection-end-line="199" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="944">
-          <caret line="199" column="33" selection-start-line="199" selection-start-column="33" selection-end-line="199" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
+        <state relative-caret-position="3380">
           <caret line="858" column="13" selection-start-line="858" selection-start-column="13" selection-end-line="858" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -571,6 +563,34 @@
             <element signature="e#1616352#1616383#0" />
             <element signature="e#1660454#1660498#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Parser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="233" column="14" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/About.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dictionary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="265" column="69" lean-forward="true" selection-start-line="265" selection-start-column="69" selection-end-line="265" selection-end-column="69" />
         </state>
       </provider>
     </entry>
