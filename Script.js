@@ -164,23 +164,27 @@ function infinitive_check (word) {
            word_parsing_result.inputWas = word;
            return word_parsing_result;
         }
-    } else if (spanish_dictionary.includes(word)) {
+    }
+    // else if (quichua_dictionary_IPA.includes(word)) {
+    //      const word_parsing_result = {word: "", morphemes: [], part_of_speech: ""};
+    //      word_parsing_result.word = word;
+    //      word_parsing_result.translation = quichua_dictionary[word]["spanish"];
+    //      word_parsing_result.part_of_speech = "non-verb";
+    //      word_parsing_result.inputWas = word;
+    //      return word_parsing_result;
+    // }
+
+}
+
+function spanish_infinitive_check (word) {
+    if (spanish_dictionary.includes(word)) {
          const word_parsing_result = {word: "", morphemes: [], part_of_speech: ""};
          word_parsing_result.word = word;
          word_parsing_result.translation = word;
          word_parsing_result.part_of_speech = "non-verb";
          word_parsing_result.inputWas = word;
          return word_parsing_result;
-
-    } else if (quichua_dictionary_IPA.includes(word)) {
-         const word_parsing_result = {word: "", morphemes: [], part_of_speech: ""};
-         word_parsing_result.word = word;
-         word_parsing_result.translation = quichua_dictionary[word]["spanish"];
-         word_parsing_result.part_of_speech = "non-verb";
-         word_parsing_result.inputWas = word;
-         return word_parsing_result;
     }
-
 }
 
 //Nom parsing function works with the non-verbal items.
@@ -731,7 +735,6 @@ function dictionary_check(word) {
         const possible_stems = [];
         const verb_stem = stem.replace(/na$/gi, "");
         if (word.startsWith(stem) && word !== "oʒa" && (dictionary[stem]["part_of_speech"] !== "verb" || dictionary[stem]["part_of_speech"].includes('noun') || dictionary[stem]["part_of_speech"].includes('adjective') || dictionary[stem]["part_of_speech"].includes('adverb') || dictionary[stem]["part_of_speech"].includes('preposition') || dictionary[stem]["part_of_speech"].includes('exclamative'))) {
-            console.log(stem);
             possible_stems.push(stem);
             console.log("---", possible_stems, possible_stems.length);
                 if (possible_stems.length === 1) {
@@ -771,7 +774,9 @@ function dictionary_check(word) {
                         return word_parsing_result
                     }
                 }
-        } else if (word.startsWith(verb_stem) && word !== "kiɾiʃpaka" && (dictionary[stem]["part_of_speech"] === "verb" || dictionary[stem]["part_of_speech"].includes('verb'))) {
+        } else if (word.startsWith(verb_stem) && (dictionary[stem]["part_of_speech"] === "verb")) {
+            console.log(verb_stem, stem);
+            console.log(dictionary[stem]["part_of_speech"]);
             console.log(verb_stem);
             possible_stems.push(verb_stem);
             console.log(possible_stems);
@@ -780,7 +785,48 @@ function dictionary_check(word) {
                     console.log("morphemy:",morphemes_string);
                     morphemes_final = [];
                     if (morpheme_string_parsing(morphemes_string, predicative_morphemes) !== false) {
-                        console.log(morphemes_final)
+                        console.log(morphemes_final);
+                        const word_parsing_result = {word: "", translation: "", morphemes: [], part_of_speech: ""};
+                        const full_verb_inf = possible_stems[0] + inf_ending;
+                        word_parsing_result.word = possible_stems[0];
+                        word_parsing_result.translation = dictionary[full_verb_inf]['spanish'];
+                        word_parsing_result.part_of_speech = dictionary[full_verb_inf]['part_of_speech'];
+                        word_parsing_result.inputWas = word;
+                        morphemes_final.forEach(m => {word_parsing_result.morphemes.push({morph: m, gloss: predicative_morphemes_dict[m]["Gloss"], gloss_meaning: predicative_morphemes_dict[m]["Meaning Gloss"]});
+                        });
+                        morphemes_final = [];
+                        return word_parsing_result
+                    }
+                } else if (possible_stems.length > 1) {
+                    const ordered_stems = possible_stems.sort(function(a, b){ return b.length - a.length});
+                    const morphemes_string = string.substring(ordered_stems[0].length);
+                    console.log("morphemy:",morphemes_string);
+                    morphemes_final = [];
+                        if (morpheme_string_parsing(morphemes_string, other_types_morphemes) !== false) {
+                            const word_parsing_result = {word: "", translation: "", morphemes: [], part_of_speech: ""};
+                            const full_verb_inf = ordered_stems[0] + inf_ending;
+                            word_parsing_result.word = ordered_stems[0];
+                            word_parsing_result.translation = dictionary[full_verb_inf]['spanish'];
+                            word_parsing_result.part_of_speech = dictionary[full_verb_inf]['part_of_speech'];
+                            word_parsing_result.inputWas = word;
+                            morphemes_final.forEach(m => {word_parsing_result.morphemes.push({morph: m, gloss: other_types_morphemes_dict[m]["Gloss"], gloss_meaning: other_types_morphemes_dict[m]["Meaning Gloss"]});
+                        });
+                        morphemes_final = [];
+                        return word_parsing_result
+                    }
+                }
+        } else if (word.startsWith(verb_stem) && (dictionary[stem]["part_of_speech"] === "verb")) {
+            console.log(verb_stem, stem);
+            console.log(dictionary[stem]["part_of_speech"]);
+            console.log(verb_stem);
+            possible_stems.push(verb_stem);
+            console.log(possible_stems);
+                if (possible_stems.length === 1) {
+                    const morphemes_string = word.substring(possible_stems[0].length);
+                    console.log("morphemy:",morphemes_string);
+                    morphemes_final = [];
+                    if (morpheme_string_parsing(morphemes_string, predicative_morphemes) !== false) {
+                        console.log(morphemes_final);
                         const word_parsing_result = {word: "", translation: "", morphemes: [], part_of_speech: ""};
                         const full_verb_inf = possible_stems[0] + inf_ending;
                         word_parsing_result.word = possible_stems[0];
@@ -811,7 +857,7 @@ function dictionary_check(word) {
                     }
                 }
             }
-        }
+    }
 }
 
 function variations_check(word) {
@@ -1089,14 +1135,15 @@ function main() {
             morphemes_verbal = [];
             morphemes = [];
             morphemes_final = [];
-        // } else if (quichua_dictionary_check(word)) {
-        //     quichua_dictionary_check_result = quichua_dictionary_check(word);
-        //     results.push(quichua_dictionary_check_result);
-        //     morphemes_verbal = [];
-        //     morphemes_nominal = [];
-        //     morphemes = [];
-        //     morphemes_final = [];
-        // }
+        } else if (spanish_infinitive_check(word)) {
+            spanish_check_result = spanish_infinitive_check(word);
+            results.push(spanish_check_result);
+            morphemes_nominal = [];
+            morphemes_verbal = [];
+            morphemes = [];
+            morphemes_final = [];
+        }
+
 
         //Here it tries to parse the word as if it is not a verb.
 
@@ -1128,7 +1175,6 @@ function main() {
         //Here we put the results of each parsed word to one array.
         results.forEach(result => {
             final_output.push(result)
-
         });
 
     });

@@ -8,49 +8,76 @@
 </head>
 
 <style>
-.popout {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
+    body {
+        font-family: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 20px;
 
-.popout .tooltiptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: #039;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 100%;
-  margin-left: -30px;
-  opacity: 0.5;
-  transition: opacity 0.3s;
-}
+    }
+    .popout {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
 
-.popout .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 5%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
+    .popout .tooltiptext {
+      visibility: hidden;
+      width: 300px;
+      background-color: #039;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 100%;
+      margin-left: -30px;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
 
-.popout:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
+    .popout .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .popout:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .footer {
+        bottom: 0;
+        width: 100%;
+        height: 6rem;
+        line-height: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .link-bottom {
+        color: black;
+        text-decoration: underline;
+        transform: scale(1);
+        transform-origin: left;
+        transition: transform 0.2s ease-in-out;
+
+
+    .link-bottom:hover {
+        font-weight: bold;
+        transform: scale(1.05);
+    }
 </style>
 
 <body>
 <script type="text/javascript" src="Conjugador.js"></script>
-<img src="choclo.gif" alt="Ecuador" width="60" height="60" align="left"><div align="middle"><font size=5>Conjugador de Quichua Comunitario (<a href="https://glottolog.org/resource/languoid/id/imba1240">qvi</a>), Kichwa Unificado, Media Lengua (<a href="https://glottolog.org/resource/languoid/id/medi1245">mue</a>)</font><img src="usask.png" alt="Usask" width="200" height="50" align="right"></div><br><br><br>
+<img src="choclo.gif" alt="Ecuador" width="60" height="60" align="left"><div align="middle"><font size=5>Conjugador de Quichua Comunitario (<a href="https://glottolog.org/resource/languoid/id/imba1240">qvi</a>), Kichwa Unificado, Media Lengua (<a href="https://glottolog.org/resource/languoid/id/medi1245">mue</a>)</font><img src="usask_logo.png" alt="Usask" width="200" height="50" align="right"></div><br><br><br>
 
 <b>Elegir el idioma:</b>
 <br>
@@ -62,7 +89,7 @@ Quichua Comunitario (Imbabura): <input type="radio" name="Qtype" id="QCRadio" >&
 <br>
 <p>
 
-<input type="text" id="inputText" value="Verbo">
+<input type="text" id="inputText" placeholder="Verbo">
 <! -- textbox-->
 <button id="myBtn" onclick="subButton()">Conjugar</button>
 <! -- button-->
@@ -496,5 +523,12 @@ src="https://c.statcounter.com/12473731/0/8e3d786e/0/"
 alt="Web Analytics"></a></div></noscript>
 <!-- End of Statcounter Code -->
 
+<footer class="footer">
+    <a href="#" class="link-bottom">About</a>
+    <a href="#" class="link-bottom">Chaupishimi</a>
+    <a href="#" class="link-bottom">Español</a>
+    <a href="#" class="link-bottom">Quichua</a>
+    <p>Created by Jesse Stewart and Fatemeh Fatemi(©2020)</p>
+</footer>
 </body>
 </html>
