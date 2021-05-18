@@ -52,6 +52,13 @@
         opacity: 1;
     }
 
+    .button {
+            font-size: 14px;
+            border-radius: 4px;
+            background: rgba(204, 217, 156, 0.7);
+            border: 0.5px solid #000000;
+    }
+
     .footer {
         bottom: 0;
         width: 100%;
@@ -73,6 +80,8 @@
         font-weight: bold;
         transform: scale(1.05);
     }
+
+
 </style>
 
 <body>
@@ -91,7 +100,7 @@ Quichua Comunitario (Imbabura): <input type="radio" name="Qtype" id="QCRadio" >&
 
 <input type="text" id="inputText" placeholder="Verbo">
 <! -- textbox-->
-<button id="myBtn" onclick="subButton()">Conjugar</button>
+<button class="button" id="myBtn" onclick="subButton()">Conjugar</button>
 <! -- button-->
 <br>
 El verbo tiene que terminar en '-na' o '-y'.

@@ -192,11 +192,19 @@
         </div>
     </div>
   </main>
-
+<footer class="footer">
+    <a href="About.html" class="link-bottom">About</a>
+    <a href="#mue" class="link-bottom lang">Chaupishimi</a>
+    <a href="#eng" class="link-bottom lang">English</a>
+    <a href="#esp" class="link-bottom lang">Español</a>
+    <a href="#qvi" class="link-bottom lang">Quichua</a>
+    <p>Created by Olga Kriukova, Jesse Stewart & Fatemeh Fatemi (©2020)</p>
+</footer>
 
 <script>
     // Define language reload anchors
-    var dataReload = document.querySelectorAll("[data-reload]");
+    var dataReload = Array.from(document.getElementsByClassName("link-bottom lang"));
+
 
 
 
@@ -255,7 +263,12 @@
 
     // Define language via window hash
     if (window.location.hash) {
-        if (window.location.hash === "#esp") {
+        if (window.location.hash === "#eng") {
+            main_header.textContent = language.eng.main_header;
+            heading_dictionary.textContent = language.eng.heading_dictionary;
+            heading_parser.textContent = language.eng.heading_parser;
+            heading_conjugator.textContent = language.eng.heading_conjugator;
+        } else if (window.location.hash === "#esp") {
             main_header.textContent = language.esp.main_header;
             heading_dictionary.textContent = language.esp.heading_dictionary;
             heading_parser.textContent = language.esp.heading_parser;
@@ -270,21 +283,15 @@
         }
     }
 
+
     // Define language onclick illiteration
-    for (i = 0; i <= dataReload.length; i++) {
+    for (i = 0; i < dataReload.length; i++) {
         dataReload[i].onclick = function() {
-          location.reload(true);
+            window.reload(true);
         };
     }
 
 </script>
-<footer class="footer">
-    <a href="About.html" class="link-bottom">About</a>
-    <a href="#mue" class="link-bottom" data-reload>Chaupishimi</a>
-    <a href="#eng" class="link-bottom" data-reload>English</a>
-    <a href="#esp" class="link-bottom" data-reload >Español</a>
-    <a href="#qvi" class="link-bottom" data-reload>Quichua</a>
-    <p>Created by Olga Kriukova, Jesse Stewart & Fatemeh Fatemi (©2020)</p>
-</footer>
+
 </body>
 </html>
