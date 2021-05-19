@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ac5f3f-6ced-4cc5-a930-2638c462493e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Conjugator.html" beforeDir="false" afterPath="$PROJECT_DIR$/Conjugator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,16 +33,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            <state relative-caret-position="468">
+              <caret line="193" column="79" lean-forward="true" selection-start-line="193" selection-start-column="79" selection-end-line="193" selection-end-column="79" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#1612985#1615823#0" />
                 <element signature="e#1616238#1616293#0" />
                 <element signature="e#1616495#1616526#0" />
                 <element signature="e#1646157#1647514#0" />
+                <element signature="e#1647548#1657976#0" />
                 <element signature="e#1658010#1664501#0" />
                 <element signature="e#1664534#1664720#0" />
+                <element signature="e#1664759#1666400#0" />
                 <element signature="e#1667669#1667713#0" />
               </folding>
             </state>
@@ -394,12 +392,12 @@
       <workItem from="1620921149283" duration="17910000" />
       <workItem from="1621009142391" duration="5759000" />
       <workItem from="1621264270838" duration="13298000" />
-      <workItem from="1621351133467" duration="16826000" />
+      <workItem from="1621351133467" duration="18045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="730000000" />
+    <option name="totallyTimeSpent" value="731219000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -428,7 +426,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.25698325" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.14230472" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.14230472" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -590,16 +588,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="47" column="23" lean-forward="true" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        <state relative-caret-position="468">
+          <caret line="193" column="79" lean-forward="true" selection-start-line="193" selection-start-column="79" selection-end-line="193" selection-end-column="79" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1612985#1615823#0" />
             <element signature="e#1616238#1616293#0" />
             <element signature="e#1616495#1616526#0" />
             <element signature="e#1646157#1647514#0" />
+            <element signature="e#1647548#1657976#0" />
             <element signature="e#1658010#1664501#0" />
             <element signature="e#1664534#1664720#0" />
+            <element signature="e#1664759#1666400#0" />
             <element signature="e#1667669#1667713#0" />
           </folding>
         </state>

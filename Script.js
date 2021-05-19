@@ -179,8 +179,19 @@ function infinitive_check (word) {
 function spanish_infinitive_check (word) {
     if (spanish_dictionary.includes(word)) {
          const word_parsing_result = {word: "", morphemes: [], part_of_speech: ""};
-         word_parsing_result.word = word;
+         word_parsing_result.word = word + " (sp)";
          word_parsing_result.translation = word;
+         word_parsing_result.part_of_speech = "non-verb";
+         word_parsing_result.inputWas = word;
+         return word_parsing_result;
+    }
+}
+
+function quichua_infinitive_check (word) {
+    if (quichua_dictionary_IPA.includes(word)) {
+         const word_parsing_result = {word: "", morphemes: [], part_of_speech: ""};
+         word_parsing_result.word = word + " (q)";
+         word_parsing_result.translation = quichua_dictionary[word]['spanish'];
          word_parsing_result.part_of_speech = "non-verb";
          word_parsing_result.inputWas = word;
          return word_parsing_result;
@@ -1207,10 +1218,17 @@ function main() {
             }
         //Here we check if any of these functions gave us any result.
         const spanish_check_result = spanish_infinitive_check(word);
+        const quichua_check_result = quichua_infinitive_check(word);
         const word_prediction_result = word_prediction(word);
         console.log("word_prediction =", word_prediction_result);
             if (results.length === 0 && spanish_check_result) {
                 results.push(spanish_check_result);
+                morphemes_nominal = [];
+                morphemes_verbal = [];
+                morphemes = [];
+                morphemes_final = [];
+            } else if (results.length === 0 && quichua_check_result) {
+                results.push(quichua_check_result);
                 morphemes_nominal = [];
                 morphemes_verbal = [];
                 morphemes = [];
